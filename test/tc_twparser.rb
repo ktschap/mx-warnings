@@ -10,7 +10,6 @@ class TestTwparser < Test::Unit::TestCase
     # 31 states and DF
     check_state_presence(w)
     assert_equal(32,w.warnings.length)
-    # not correctly parsing out coahuila and tabasco ...
   end
   
   private
