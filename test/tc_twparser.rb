@@ -32,10 +32,10 @@ class TestTwparser < Test::Unit::TestCase
   def check_state_presence(w)
     @@EXPECTED_STATES.each do | curr_state |
       rw = w.get_region_warning(curr_state)
+      assert_not_nil(curr_state, rw)
       puts rw.region
       puts rw.region_full_desc
       puts rw.warning
-      assert_not_nil(curr_state, rw)
     end
   end
  

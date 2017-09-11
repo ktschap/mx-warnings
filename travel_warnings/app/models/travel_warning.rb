@@ -1,0 +1,2 @@
+class TravelWarning < ApplicationRecord
+end

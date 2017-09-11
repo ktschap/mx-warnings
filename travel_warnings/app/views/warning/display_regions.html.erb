@@ -1,0 +1,8 @@
+<% provide(:title, "Travel Warnings for Mexico") %>
+<h2>Choose a state</h2>
+
+<ul>
+<% @all_warnings.each do |w| %>
+    <li><a href="/warning/display?id=<%= w.id %>"><%= w.name %></a></li>
+<% end %>
+</ul>

@@ -1,0 +1,8 @@
+<% provide :title do %>
+  <%= @travel_warning.name %> travel advisory 
+<% end %>
+<h2><%= @travel_warning.name %></h2>
+<% if @travel_warning.name != @travel_warning.fullname %>
+  <h3><%= @travel_warning.fullname %></h3>
+<% end %>
+<%= raw(@travel_warning.detail) %>
